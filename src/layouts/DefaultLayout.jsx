@@ -5,9 +5,10 @@ const DeafaultLayout = () => {
     return (
         <>
             <Header />
-            <main>
+            <main className="container">
                 <Outlet />
             </main>
+            <footer className="container mt-4">Footer</footer>
         </>
     );
 }

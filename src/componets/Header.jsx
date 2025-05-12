@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
-        <header className="bg-success text-white py-3">
+        <header className="bg-success text-white py-3 mb-4">
             <div className="container d-flex justify-content-between align-items-center">
                 <div>Logo</div>
                 <ul className="d-flex  list-unstyled m-0 gap-2">

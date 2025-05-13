@@ -1,9 +1,15 @@
+import MoviesCard from "../componets/MoviesCard";
 const MoviesPage = () => {
     return (
-        <div>
-            <h1>film</h1>
-            <p>Lista film</p>
-        </div>
+        <>
+            <h1 className="mb-2">Film</h1>
+            <section>
+                <h2 className="mb-2">Lista Film</h2>
+                <div className="row">
+                    <MoviesCard />
+                </div>
+            </section>
+        </>
     );
 }
 

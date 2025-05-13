@@ -5,9 +5,14 @@ import axios from "axios";
 const MoviesPage = () => {
 
     const [movies, setMovies] = useState([])
+    const [search, setSearch] = useState("")
 
     function getMovies() {
-        axios.get("http://localhost:3000/api/movies")
+        axios.get("http://localhost:3000/api/movies", {
+            params: {
+                search
+            }
+        })
             .then(res => {
                 console.log(res.data);
                 setMovies(res.data);
@@ -17,15 +22,31 @@ const MoviesPage = () => {
             });
     }
 
+    function searchMovies(e) {
+        e.preventDefault();
+        getMovies();
+    }
+
     useEffect(getMovies, [])
 
 
     return (
         <>
-            <h1 className="mb-2">Film</h1>
             <section>
+                <div className="d-flex justify-content-between ">
+                    <h1 className="mb-2">Film</h1>
+                    <form onSubmit={searchMovies} className="row g-1">
+                        <div className="col-auto">
+                            <label className="visually-hidden">Cerca un film</label>
+                            <input type="text" className="form-control" placeholder="Cerca un film"
+                                value={search} onChange={(e) => setSearch(e.target.value)} />
+                        </div>
+                        <div className="col-auto">
+                            <button type="submit" className="btn btn-primary mb-3">Cerca</button>
+                        </div>
+                    </form>
+                </div>
 
-                <h2 className="mb-2">Lista Film</h2>
 
                 <div className="row gy-3">
                     {movies.length ? movies.map(movie => (

@@ -7,7 +7,7 @@ const MoviesPage = () => {
     const [movies, setMovies] = useState([])
 
     function getMovies() {
-        axios.get("http://localhost:3000/movies")
+        axios.get("http://localhost:3000/api/movies")
             .then(res => {
                 console.log(res.data);
                 setMovies(res.data);

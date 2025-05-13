@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 const MoviesCard = ({ data }) => {
 
-    const { id, title, abstract, release_year } = data;
+    const { id, title, abstract, release_year, imagePath } = data;
     return (
 
         <div className="card">
-            <img src="" alt="Film" />
+            <img src={imagePath} alt="Film" />
             <div className="card-body">
                 <h5 className="card-title">{title}</h5>
                 <p className="card-text">Release year: {release_year}</p>

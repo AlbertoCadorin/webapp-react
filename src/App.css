@@ -1,0 +1,19 @@
+.bg-orang {
+    background-color: #fd7e14;
+}
+
+.btn-orang {
+    background-color: #fd7e14;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-orang:hover {
+    background-color: #e67e22;
+}

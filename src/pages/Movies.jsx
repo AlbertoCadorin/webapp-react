@@ -33,7 +33,7 @@ const MoviesPage = () => {
     return (
         <>
             <section>
-                <div className="d-flex justify-content-between ">
+                <div className="d-flex justify-content-between mb-4">
                     <h1 className="mb-2">Film</h1>
                     <form onSubmit={searchMovies} className="row g-1">
                         <div className="col-auto">
@@ -42,7 +42,7 @@ const MoviesPage = () => {
                                 value={search} onChange={(e) => setSearch(e.target.value)} />
                         </div>
                         <div className="col-auto">
-                            <button type="submit" className="btn btn-primary mb-3">Cerca</button>
+                            <button type="submit" className="btn btn-orang ">Cerca</button>
                         </div>
                     </form>
                 </div>

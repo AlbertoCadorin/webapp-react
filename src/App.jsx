@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import MoviesPage from './pages/Movies'
 import MovieDetailPage from './pages/MovieDetail'
 import DefaultLayout from './layouts/DefaultLayout'
+import './App.css'
 
 function App() {
 

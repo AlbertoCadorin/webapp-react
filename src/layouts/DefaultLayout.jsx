@@ -4,11 +4,14 @@ import Header from "../componets/Header";
 const DeafaultLayout = () => {
     return (
         <>
-            <Header />
-            <main className="container">
-                <Outlet />
-            </main>
-            <footer className="container mt-4">Footer</footer>
+            <body className="bg-black text-white">
+                <Header />
+                <main className="container">
+                    <Outlet />
+                </main>
+                <footer className="container mt-4">Footer</footer>
+            </body>
+
         </>
     );
 }

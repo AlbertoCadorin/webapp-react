@@ -2,15 +2,15 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
-        <header className="bg-success text-white py-3 mb-4">
+        <header className="bg-orang py-3 mb-4">
             <div className="container d-flex justify-content-between align-items-center">
-                <div>Logo</div>
+                <div className="text-white">Logo</div>
                 <ul className="d-flex  list-unstyled m-0 gap-2">
                     <li>
-                        <NavLink to="/" className="hover:text-gray-400">Home</NavLink>
+                        <NavLink to="/" className="text-white text-decoration-none">Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/movies" className="hover:text-gray-400">Movies</NavLink>
+                        <NavLink to="/movies" className="text-white text-decoration-none">Movies</NavLink>
                     </li>
                 </ul>
             </div>

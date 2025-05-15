@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const MoviesCard = ({ data }) => {
 
-    const { id, title, abstract, release_year, imagePath, media_recensioni } = data;
+    const { id, title, release_year, imagePath, media_recensioni } = data;
     return (
 
         <div className="card bg-black text-white">

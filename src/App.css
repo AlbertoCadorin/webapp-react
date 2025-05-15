@@ -1,9 +1,9 @@
 .bg-orang {
-    background-color: #fd7e14;
+    background-color: #cc5500;
 }
 
 .btn-orang {
-    background-color: #fd7e14;
+    background-color: #cc5500;
     color: white;
     border: none;
     padding: 7px 20px;
@@ -16,4 +16,17 @@
 
 .btn-orang:hover {
     background-color: #e67e22;
+}
+
+.border-orang {
+    border-bottom: 2px solid #cc5500;
+}
+
+.t-white {
+    color: white;
+
+}
+
+.t-white:hover {
+    color: #e67e22;
 }

@@ -5,7 +5,7 @@ const Header = () => {
         <header className="bg-black py-3 mb-4 border-orang">
             <div className="container d-flex justify-content-between align-items-center">
                 <img src="/space_cinema_header.png" alt="Logo" style={{ height: "50px" }} />
-                <ul className="d-flex  list-unstyled m-0 gap-2">
+                <ul className="d-flex  list-unstyled m-0 gap-2 fs-4">
                     <li>
                         <NavLink to="/" className="t-white text-decoration-none">Home</NavLink>
                     </li>

@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import ReviewsCard from "../componets/ReviewsCard";
+import ReviewForm from "../componets/ReviewForm";
 
 const MovieDetailPage = () => {
 
@@ -38,6 +39,9 @@ const MovieDetailPage = () => {
                 {reviews()}
             </section>
             <Link to={`/movies`} className="btn btn-orang">Indietro</Link>
+            <section>
+                <ReviewForm movieId={id} refreshMovie={getMovie} />
+            </section>
         </article>
     );
 }
